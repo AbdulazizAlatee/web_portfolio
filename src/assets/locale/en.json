@@ -1,0 +1,22 @@
+{
+  "hello": "Hello,",
+  "heroName": "I'm ِAbdulaziz Alatee",
+  "positions": ["Data Scientist", "AI Engineer"],
+  "resumeButton": "Resume",
+  "aboutTitle": "About",
+  "aboutBody": "Specialized in the field of data: data science, data engineering, advanced analytics and artificial intelligence applications",
+  "followMe": "Follow me:",
+  "skillsTitle": "Skills",
+  "certificationsTitle": "Certifications",
+  "letsTalkTitle": "Let's Talk",
+  "letsTalkBody": " Reach me out. I can't wait to hear from you! 🤩",
+  "contactMe": "Contact Me:",
+  "formTitle": "Send me a message 🚀",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "sendButton": "Send",
+  "fillForm": "Please fill in all the fields.",
+  "messageSent": " Message sent successfully!",
+  "messageFailed": "Message failed to send."
+}

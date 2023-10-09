@@ -1,0 +1,55 @@
+import Header from "./components/Header/Header";
+import Hero from "./components/UI/Hero";
+import TechnicalSkills from "./components/UI/TechnicalSkills";
+import Certifications from "./components/UI/Certifications";
+import LetsTalk from "./components/UI/LetsTalk";
+import PreLoader from "./components/UI/Preloader";
+import Fade from "react-reveal/Fade";
+import { useEffect, useState } from "react";
+import "./App.css";
+
+function App({ change, setCurrentLanguage, currentLanguage }) {
+  const duration = 2000;
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+  }, []);
+
+  return (
+    <>
+      {isLoading ? (
+        <PreLoader />
+      ) : (
+        <>
+          <Fade duration={duration}>
+            <Header
+              change={change}
+              setCurrentLanguage={setCurrentLanguage} // Pass down to Header
+              currentLanguage={currentLanguage} // Pass down to Header
+            />
+          </Fade>
+          <Fade duration={duration}>
+            <Hero />
+          </Fade>
+          <Fade duration={duration}>
+            <TechnicalSkills />
+          </Fade>
+          <Fade duration={duration}>
+            <Certifications />
+          </Fade>
+          <Fade duration={duration}>
+            <LetsTalk />
+          </Fade>
+        </>
+      )}
+
+      {/* <Footer /> */}
+    </>
+  );
+}
+
+export default App;
